@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Produtos API
+  datasource:
+    url: jdbc:h2:mem:produtos #Jdbc
+    username: sa #nome padrão
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect #hibernate faz as operação no banco
+  h2:
+    console:
+      enabled: true #ativa a interface web do banco h2
+      path: /h2-console #caminho para o banco
+
+    #Essa é a configuração para o banco de dados no conteúdo YML
+
+    #exemplo do Hibernate
+    #Produto produto = new Produto();
+    #produto.setId("1");
+    #produto.setNome("Cadeira");
+    #produto.setDescricao("Cadeira de escritório");
+    #produto.setPreco(299.99);
+
+    #produtoRepository.save(produto); // Hibernate salva no banco!
+
